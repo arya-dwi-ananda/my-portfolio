@@ -10,7 +10,7 @@ function Skills() {
     <div className="w-full bg-linear-to-b from-gray-100 to-white">
       <div id="skills" className="md:max-w-6xl w-9/10 mx-auto flex flex-col pt-10 pb-20 gap-12">
         <h2 className="text-center text-lg font-medium">Skills</h2>
-        <section className="flex flex-wrap gap-2">
+        <section className="flex flex-wrap gap-2 mx-auto">
           <Container>
             <img className="w-37 h-37" src={html} alt="" />
             <p className="text-sm text-center mt-2 font-medium">HTML 5</p>
