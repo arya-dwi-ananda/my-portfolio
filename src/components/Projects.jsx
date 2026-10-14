@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "./Container";
 import project_3 from "../assets/project-3.png";
+import project_4 from "../assets/project-4.png";
 
 function Projects() {
   return (
@@ -10,6 +11,17 @@ function Projects() {
         <section className="flex flex-wrap gap-2 mx-auto">
           <Container>
             <img className="w-100" src={project_3} alt="" />
+            <p className="text-sm mt-2 mb-1 font-medium">Expense Tracker</p>
+            <a className="text-lg font-semibold text-[#087ea4] hover:text-white rounded-full px-1.5 py-0.5 hover:bg-[#087ea4] text-shadow-[0_0_20px_rgba(8,126,164,1)]" href="">
+              Visit
+            </a>
+          </Container>
+          <Container>
+            <img className="w-100" src={project_4} alt="" />
+            <p className="text-sm mt-2 mb-1 font-medium">Expense Tracker</p>
+            <a className="text-lg font-semibold text-[#087ea4] hover:text-white rounded-full px-1.5 py-0.5 hover:bg-[#087ea4] text-shadow-[0_0_20px_rgba(8,126,164,1)]" href="">
+              Visit
+            </a>
           </Container>
         </section>
       </div>
