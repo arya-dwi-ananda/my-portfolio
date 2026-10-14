@@ -2,6 +2,7 @@ import React from "react";
 import Navigation from "./Navigation";
 import Hero from "./Hero";
 import About from "./About";
+import Skills from "./Skills";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <main>
         <Hero />
         <About />
+        <Skills />
       </main>
     </div>
   );
