@@ -12,7 +12,7 @@ function Navigation() {
       /* Navbar */
       <div className="fixed top-0 left-0 z-39 w-full bacdrop backdrop-blur-lg">
         <nav className="flex w-full md:max-w-7xl md:justify-around justify-between items-center py-4 px-6 mx-auto relative">
-          <h2 className={`font-bold text-4xl md:text-5xl my-0 text-[#61DAFB]`}>Arya</h2>
+          <h2 className={`font-bold text-4xl md:text-5xl my-0 text-[#087EA4]`}>Arya</h2>
           {/* {`nav-menu" className="md:flex mx-auto gap-8 ${isOpen ? "flex" : "hidden"}`} */}
 
           {/* Desktop menu */}
@@ -45,7 +45,7 @@ function Navigation() {
           </div>
 
           {/* Mobile hamburger button */}
-          <div onClick={changeToggle} className="md:hidden z-50 bg-[#61DAFB] rounded-md px-2 py-1" id="nav-toggle">
+          <div onClick={changeToggle} className="md:hidden z-50 bg-[#087EA4] rounded-md px-2 py-1" id="nav-toggle">
             <i className={`${isOpen ? "hidden" : "block"} ri-menu-line nav__burger text-2xl text-white`}></i>
           </div>
         </nav>
@@ -90,7 +90,7 @@ function Navigation() {
       </div>
       <button
         onClick={changeToggle}
-        className={`md:hidden fixed right-6 top-4 z-50 rounded-md bg-[#61DAFB]
+        className={`md:hidden fixed right-6 top-4 z-50 rounded-md bg-[#087ea4]
     px-2 py-1 ${isOpen ? "block" : "hidden"}`}
       >
         <i className={`${isOpen ? "block" : "hidden"} ri-close-line nav__close text-2xl text-white`}></i>
