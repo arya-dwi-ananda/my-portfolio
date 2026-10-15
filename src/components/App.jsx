@@ -5,6 +5,7 @@ import About from "./About";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Contacts from "./Contacts";
+import Copyright from "./Copyright";
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
         <Projects />
         <Contacts />
       </main>
+      <footer>
+        <Copyright />
+      </footer>
     </div>
   );
 }
