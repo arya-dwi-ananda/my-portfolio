@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import github from "../assets/github.png";
-import linkedin from "../assets/linkedin.png";
 
 function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,37 +8,34 @@ function Navigation() {
   return (
     <>
       /* Navbar */
-      <div className="fixed top-0 left-0 z-39 w-full bacdrop backdrop-blur-lg">
-        <nav className="flex w-full md:max-w-7xl md:justify-around justify-between items-center py-4 px-6 mx-auto relative">
-          <h2 className={`font-bold text-4xl md:text-5xl my-0 text-[#087EA4]`}>Arya</h2>
+      <div className="fixed top-0 left-0 z-39 w-full backdrop backdrop-blur-lg">
+        <nav className="flex w-full md:max-w-7xl md:justify-around justify-between items-center py-1 px-6 mx-auto relative">
+          <h2 className={`mask-conic-from-neutral-950 text-4xl md:text-7xl my-0 text-[#087EA4]`}>A</h2>
           {/* {`nav-menu" className="md:flex mx-auto gap-8 ${isOpen ? "flex" : "hidden"}`} */}
 
           {/* Desktop menu */}
           <ul id="nav-menu" className="md:flex flex-row items-center gap-6 hidden">
-            <li>
+            <li className="hover:bg-gray-100 rounded-full px-3 py-2.5">
               <a href="#home">Home</a>
             </li>
-            <li>
+            <li className="hover:bg-gray-100 rounded-full px-3 py-2.5">
               <a href="#about">About</a>
             </li>
-            <li>
+            <li className="hover:bg-gray-100 rounded-full px-3 py-2.5">
               <a href="#skills">Skills</a>
             </li>
-            <li>
+            <li className="hover:bg-gray-100 rounded-full px-3 py-2.5">
               <a href="#projects">Projects</a>
             </li>
-            <li>
-              <a href="#contact">Contact</a>
+            <li className="hover:bg-gray-100 rounded-full px-3 py-2.5">
+              <a href="#contacts">Contact</a>
             </li>
           </ul>
 
           {/* Desktop social media */}
           <div className="md:flex items-center hidden">
             <a href="https://github.com/arya-dwi-ananda">
-              <img src={github} alt="" className="w-10 h-10" />
-            </a>
-            <a href="https://www.linkedin.com/in/muhammad-arya-dwi-ananda-454737405/">
-              <img src={linkedin} alt="" className="w-13 h-13" />
+              <i className="fa-brands fa-github text-4xl hover:bg-gray-100 rounded-full p-3"></i>
             </a>
           </div>
 
@@ -80,10 +75,10 @@ function Navigation() {
           </li>
           <div className="pt-20 flex items-center gap-5">
             <a href="https://github.com/arya-dwi-ananda">
-              <img src={github} alt="" className="w-10 h-10" />
+              <i className="fa-brands fa-github text-2xl"></i>
             </a>
             <a href="https://www.linkedin.com/in/muhammad-arya-dwi-ananda-454737405/">
-              <img src={linkedin} alt="" className="w-13 h-13" />
+              <i class="fa-brands fa-linkedin text-2xl"></i>
             </a>
           </div>
         </ul>
