@@ -16,8 +16,8 @@ export default function Contacts() {
             <div>
               <p className="text-gray-500">"Have a project in mind or opportunity to share? Feel free to reach out. I'm always open to connecting, learning, and collaborating on exciting web development projects."</p>
             </div>
-            <div className="flex justify-between md:gap-5">
-              <div className="flex flex-col gap-1">
+            <section className="flex justify-between md:gap-5">
+              <section className="flex flex-col gap-1">
                 <p className={`${darkMode ? "text-[#61DAFB]" : "text-[#087EA4]"}`}>Navigation</p>
                 <ul id="nav-menu" className="md:flex flex-col text-gray-500">
                   <li>
@@ -36,8 +36,8 @@ export default function Contacts() {
                     <a href="#contact">Contact</a>
                   </li>
                 </ul>
-              </div>
-              <div className="flex flex-col gap-1">
+              </section>
+              <section className="flex flex-col gap-1">
                 <p className={`${darkMode ? "text-[#61DAFB]" : "text-[#087EA4]"}`}>Contact</p>
                 <ul id="nav-menu" className="md:flex flex-col text-gray-500">
                   <li>+62 858-5604-0899</li>
@@ -52,8 +52,8 @@ export default function Contacts() {
                     <a href="https://www.instagram.com/arya_dwi_ananda/">Instagram</a>
                   </li>
                 </ul>
-              </div>
-            </div>
+              </section>
+            </section>
           </section>
           <div className="flex items-center justify-center gap-2">
             <a href="mailto:aryadwiananda69@gmail.com">
