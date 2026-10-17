@@ -72,7 +72,7 @@ function Navigation() {
             </a>
           </li>
           <li>
-            <a href="#contact" onClick={changeToggleToFalse}>
+            <a href="#contacts" onClick={changeToggleToFalse}>
               Contact
             </a>
           </li>
