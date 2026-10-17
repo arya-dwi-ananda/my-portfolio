@@ -1,14 +1,17 @@
 import React from "react";
 import Container from "./Container";
 import arya from "../assets/arya.jpeg";
+import { useTheme } from "./ThemeContext";
 
 function About() {
+  const { darkMode } = useTheme();
+
   return (
-    <div className="w-full bg-linear-to-b from-gray-100 to-white">
+    <div className={`w-full ${darkMode ? "bg-[#1A1C23]" : "bg-linear-to-b from-gray-100 to-white"}`}>
       <section id="about" className="md:max-w-6xl w-9/10 mx-auto flex flex-col pt-10 pb-20 gap-12 scroll-mt-20">
-        <h2 className="text-center text-lg font-medium">About Me</h2>
+        <h2 className={`text-center text-lg font-medium ${darkMode && "text-[#F6F7F9]"}`}>About Me</h2>
         <Container>
-          <section className="flex items-center gap-4">
+          <section className={`flex items-center gap-4}`}>
             <p className="text-gray-600">
               Hi, I'm Muhammad Arya Dwi Ananda, an aspiring Front-End Developer passionate about building responsive, interactive, and user-friendly web experiences.
               <br />
@@ -19,7 +22,7 @@ function About() {
               <br />
               I'm eager to keep learning, take on new challenges, and create web experiences that combine clean design with great usability.
             </p>
-            <img className="w-50 h-50 rounded-full shadow-[0_0_20px_rgba(8,126,164,0.6)] object-cover" src={arya} alt="arya-picture" />
+            <img className={`w-50 h-50 rounded-full ${darkMode ? "shadow-[0_0_20px_rgba(97,218,251,0.6)]" : "shadow-[0_0_20px_rgba(8,126,164,0.6)]"} object-cover`} src={arya} alt="arya-picture" />
           </section>
         </Container>
       </section>

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { ThemeProvider } from "./ThemeContext";
 import Navigation from "./Navigation";
 import Hero from "./Hero";
 import About from "./About";
@@ -9,7 +10,7 @@ import Copyright from "./Copyright";
 
 function App() {
   return (
-    <div>
+    <ThemeProvider>
       <header>
         <Navigation />
       </header>
@@ -23,7 +24,7 @@ function App() {
       <footer>
         <Copyright />
       </footer>
-    </div>
+    </ThemeProvider>
   );
 }
 

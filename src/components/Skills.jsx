@@ -5,12 +5,15 @@ import css from "../assets/logo-css.jpg";
 import js from "../assets/logo-js.jpg";
 import react from "../assets/logo-react.png";
 import tailwindcss from "../assets/logo-tailwindcss.png";
+import { useTheme } from "./ThemeContext";
 
 function Skills() {
+  const { darkMode } = useTheme();
+
   return (
-    <div className="w-full bg-linear-to-b from-gray-100 to-white">
+    <div className={`w-full ${darkMode ? "bg-[#23272F]" : "bg-linear-to-b from-gray-100 to-white"}`}>
       <section id="skills" className="md:max-w-6xl w-9/10 mx-auto flex flex-col pt-10 pb-20 gap-12 scroll-mt-20">
-        <h2 className="text-center text-lg font-medium">Skills</h2>
+        <h2 className={`text-center text-lg font-medium ${darkMode && "text-[#F6F7F9]"}`}>Skills</h2>
         <section className="flex flex-wrap gap-2 mx-auto">
           <Container>
             <img className="w-37 h-37" src={html} alt="logo-html" />

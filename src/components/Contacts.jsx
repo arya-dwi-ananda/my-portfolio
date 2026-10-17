@@ -1,22 +1,24 @@
 import React from "react";
 import Container from "./Container";
+import { useTheme } from "./ThemeContext";
 
 export default function Contacts() {
+  const { darkMode } = useTheme();
+
   return (
-    <div className="w-full bg-linear-to-b from-gray-100 to-white">
+    <div className={`w-full ${darkMode ? "bg-[#23272F]" : "bg-linear-to-b from-gray-100 to-white"}`}>
       <section id="contacts" className="md:max-w-6xl w-9/10 mx-auto flex flex-col pt-10 pb-20 gap-12">
-        <h2 className="text-center text-lg font-medium">Contacts</h2>
+        <h2 className={`text-center text-lg font-medium ${darkMode && "text-[#F6F7F9]"}`}>Contacts</h2>
         <Container>
-          <p className="font-bold text-2xl pb-7">Lets Connect there</p>
+          <p className={`font-bold text-2xl pb-7 ${darkMode ? "text-[#61DAFB]" : "text-[#087ea4]"}`}>Lets Connect there</p>
           <hr className="border border-gray-200" />
           <section className="flex md:flex-row flex-col gap-5 py-5 items-center">
             <div>
-              <h2 className={`text-2xl md:text-3xl my-0 text-[#087EA4] pb-3`}>Arya</h2>
               <p className="text-gray-500">"Have a project in mind or opportunity to share? Feel free to reach out. I'm always open to connecting, learning, and collaborating on exciting web development projects."</p>
             </div>
             <div className="flex justify-between md:gap-5">
               <div className="flex flex-col gap-1">
-                <p className="text-[#087EA4]">Navigation</p>
+                <p className={`${darkMode ? "text-[#61DAFB]" : "text-[#087EA4]"}`}>Navigation</p>
                 <ul id="nav-menu" className="md:flex flex-col text-gray-500">
                   <li>
                     <a href="#home">Home</a>
@@ -36,7 +38,7 @@ export default function Contacts() {
                 </ul>
               </div>
               <div className="flex flex-col gap-1">
-                <p className="text-[#087EA4]">Contact</p>
+                <p className={`${darkMode ? "text-[#61DAFB]" : "text-[#087EA4]"}`}>Contact</p>
                 <ul id="nav-menu" className="md:flex flex-col text-gray-500">
                   <li>+62 858-5604-0899</li>
                   <li>aryadwiananda69@gmail.com</li>
